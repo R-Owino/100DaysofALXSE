@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="image.png" alt="dsa" width="300" height="250">
+    <img src="assets/image.png" alt="dsa" width="300" height="250">
 </p>
 
 
