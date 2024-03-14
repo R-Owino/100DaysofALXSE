@@ -10,4 +10,4 @@
 <p>Personalized learning towards improving my Data Structures and Algorithm knowledge.</p>
 
 ### 📝 Table of Contents
-- [Introduction to Data Structures and Algorithms]()
+[Introduction to Data Structures and Algorithms](https://github.com/R-Owino/100DaysofALXSE/blob/main/Day%201/Intro.md)
