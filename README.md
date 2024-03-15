@@ -7,8 +7,18 @@
     <br> 
 </h2>
 
-<p>Personalized learning towards improving my Data Structures and Algorithm knowledge.</p>
+<p style="font-size: 20px;">Personalized learning towards improving my Data Structures and Algorithm knowledge. Throughout the learning, I will be using various resources but my main ones are:
+        <ul>
+            <li style="font-size: 20px;"><a href="https://www.amazon.in/Structures-Algorithms-Undergraduate-Computer-Science/dp/3319130714">Data Structures and Algorithms with Python by Kent D. Lee and Steve Hubbard</a></li>
+            <li style="font-size: 20px;"><a href="https://roadmap.sh/datastructures-and-algorithms">Data Structures and Algorithms Roadmap on roadmap.sh</a></li>
+            <li style="font-size: 20px;"><a href="https://www.w3schools.com/dsa/index.php">DSA Tutorial on W3Schools</a></li>
+        </ul>
+</p>
 
-### 📝 Table of Contents
-1. [Introduction to Data Structures and Algorithms](https://github.com/R-Owino/100DaysofALXSE/blob/main/Day%201/Intro.md)
-2. [Picking a Language](https://github.com/R-Owino/100DaysofALXSE/blob/main/Day%202/Pick%20a%20language.md)
+
+<h3 style="font-size: 30px;">📝 Table of Contents</h3>
+<ol>
+    <li style="font-size: 20px;"><a href="https://github.com/R-Owino/100DaysofALXSE/blob/main/Day%201/Intro.md">Introduction to Data Structures and Algorithms</a></li>
+    <li style="font-size: 20px;"><a href="https://github.com/R-Owino/100DaysofALXSE/blob/main/Day%202/Pick%20a%20language.md">Picking a Language</a></li>
+</ol>
+
