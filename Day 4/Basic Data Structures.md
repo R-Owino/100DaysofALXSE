@@ -45,7 +45,28 @@ arr2 = [
     [7, 8, 9]]
 ```
 
-<p>To practice arrays, I have a file <i>arrays.py</i> that constitutes exercise from the first link in the References section below.</p>
+<p>To practice arrays, I have a file <i>arrays.py</i> that constitutes exercise from the first link in the References section below. The following snippet shows the output of <i>arrays.py</i></p>
+
+```
+$ ./arrays.py 
+###################### Example 1 ######################
+Feb compared to Jan: 150
+Total expenses in the first quater: 7150
+No month had an expense of exactly 2000
+Expense after adding June: [2200, 2350, 2600, 2130, 2190, 1980]
+Expense after refund: [2200, 2350, 2600, 1930, 2190, 1980]
+###################### Example 2 ######################
+Length of list: 5
+List after adding 'black panther': ['spider man', 'thor', 'hulk', 'iron man', 'captain america', 'black panther']
+List after removing 'black panther' and adding it after 'hulk': ['spider man', 'thor', 'hulk', 'black panther', 'iron man', 'captain america']
+List after removing 'hulk' and 'thor' and adding 'doctor strange': ['spider man', 'doctor strange', 'black panther', 'iron man', 'captain america']
+List after sorting in aplhabetical order: ['black panther', 'captain america', 'doctor strange', 'iron man', 'spider man']
+###################### Example 3 ######################
+Enter max number: 10
+Odd numbers between 1 and 10: [1, 3, 5, 7, 9]
+```
+
+
 
 #### References
 1. [DSA - Arrays](https://www.youtube.com/watch?v=gDqQf4Ekr2A)
