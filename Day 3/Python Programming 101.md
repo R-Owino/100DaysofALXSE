@@ -71,7 +71,40 @@ defenestrate 12
 
 <p>In the file <i>functions.py</i>, I will explore more on user defined functions</p>
 
+<p>On execution, the functions output the following:</p>
+
+```
+$ ./functions.py 
+Enter a number to get it's fibonacci sequence: 9
+[0, 1, 1, 2, 3, 5, 8]
+[0, 1, 3]
+```
+
+### 4. Object oriented programming
+<p>Python is an OOP language. Almost everything in Python is an object, with its properties and methods. Classes provide a means of bundling data and functionality together. Creating a new class creates a new type of object, allowing new instances of that type to be made. Each class instance can have attributes attached to it for maintaining its state. Class instances can also have methods (defined by its class) for modifying its state.</p>
+
+<p>This is the syntax for defining a class. ClassName must start with a capital letter:</p>
+
+```
+class ClassName:
+    <statement-1>
+    .
+    .
+    .
+    <statement-N>
+```
+
+<p>To experiment with python classes and methods, I have created a file <i>oop.py</i> that creates a simple draw program. Run it to have some drawing fun &#128521;</p>
+
+<p>On running the file, the window below will open:</p>
+
+<p align="center">
+    <img src="../assets/oop.png" alt="oop_fun">
+</p>
+
 
 #### References
 1. [Python Syntax](https://www.tutorialspoint.com/python/python_basic_syntax.htm)
 2. [Control Flow Tools](https://docs.python.org/3/tutorial/controlflow.html)
+3. [Everything functions](https://docs.python.org/3/tutorial/controlflow.html#defining-functions)
+4. [Python Classes](https://docs.python.org/3/tutorial/classes.html)
