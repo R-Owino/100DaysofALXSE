@@ -6,7 +6,7 @@
 
 <figure>
     <img src="../assets/Singlelinkedlist.png" alt="linked_list" style="width:100%">
-    <figcaption align="center">linked list</figcaption>
+    <figcaption align="center">Linked list</figcaption>
 </figure>
 
 <p>The following terms are regularly used with linked lists:</p>
@@ -49,3 +49,37 @@
 </ol>
 
 ### Linked lists vs Arrays
+
+<p>The following table shows how arrays and linked lists compare:</p>
+
+<table>
+    <tr>
+        <th>Arrays</th>
+        <th>Linked lists</th>
+    </tr>
+    <tr>
+        <td>Stored in contigous locations</td>
+        <td>Stored in non-contigous locations</td>
+    </tr>
+    <tr>
+        <td>Memory is allocated at compile time</td>
+        <td>Memory is allocated at run time</td>
+    </tr>
+    <tr>
+        <td>Uses less memory</td>
+        <td>Uses more memory because it stores both data and pointer to next node</td>
+    </tr>
+    <tr>
+        <td>Elements can be accessed easily</td>
+        <td>Accessing elements requires the traversal of the whole linked list</td>
+    </tr>
+    <tr>
+        <td>Insertion and deletion of items takes time</td>
+        <td>Insertion and deletion operation is faster</td>
+    </tr>
+</table>
+
+
+#### References
+1. [DSA - Linked lists](https://www.youtube.com/watch?v=qp8u-frRAnU)
+2. [Linked list data structure](https://www.geeksforgeeks.org/data-structures/linked-list/?ref=lbp)
