@@ -1,4 +1,4 @@
-<p>This is a continuation of the basic data structures. Yesterday, I covered arrays. Today I will look into linked lists.</p>
+<p>This is a continuation of the basic data structures. Yesterday, I covered arrays. Today and over the next few days, I will look into linked lists ⛓</p>
 
 ## 2. Linked Lists
 
