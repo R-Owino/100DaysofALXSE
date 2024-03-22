@@ -40,10 +40,14 @@
     </li>
     <li>
         <p>Circular linked list</p>
-        <p>This is a list in which the last node contains the pointer to the first node of the list. It has no beginning or end because it allows traversal in any direction until we get to the same node we started from.</p>
+        <p>This is a list in which the last node contains the pointer to the first node of the list. It has no beginning or end because it allows traversal in any direction until we get to the same node we started from. There are both circular singly and circular doubly linked lists.</p>
         <figure>
                     <img src="../assets/circularlinkedlist.png" alt="Image description" style="width:100%">
-                    <figcaption align="center">Circular linked list</figcaption>
+                    <figcaption align="center">Circular singly linked list</figcaption>
+        </figure>
+        <figure>
+                    <img src="../assets/circulardoubly.png" alt="Image description" style="width:100%">
+                    <figcaption align="center">Circular doubly linked list</figcaption>
         </figure>
     </li>
 </ol>
@@ -83,3 +87,4 @@
 #### References
 1. [DSA - Linked lists](https://www.youtube.com/watch?v=qp8u-frRAnU)
 2. [Linked list data structure](https://www.geeksforgeeks.org/data-structures/linked-list/?ref=lbp)
+3. [Circular linked lists](https://www.scholarhat.com/tutorial/datastructures/circular-linked-list-in-data-structures)
