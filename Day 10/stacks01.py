@@ -77,7 +77,7 @@ if __name__ == "__main__":
     print(stack.push(30))
     print(stack.push(40))
     print(stack.push(50))
-    print(stack.push(60)) # attaempt to push to a full stack
+    print(stack.push(60)) # attempt to push to a full stack
 
     # peek operation
     print(stack.peek())
