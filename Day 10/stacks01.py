@@ -72,6 +72,7 @@ class Stack:
 if __name__ == "__main__":
     stack = Stack(5)
     # push operation
+    print("*****Push operations*****")
     print(stack.push(10))
     print(stack.push(20))
     print(stack.push(30))
@@ -80,9 +81,11 @@ if __name__ == "__main__":
     print(stack.push(60)) # attempt to push to a full stack
 
     # peek operation
+    print("*****Peek operations*****")
     print(stack.peek())
 
     # pop operation
+    print("*****Pop operations*****")
     print(stack.pop())
     print(stack.pop())
     print(stack.pop())
