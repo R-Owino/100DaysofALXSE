@@ -40,7 +40,7 @@
 3. Implement as a collection
 <p>Lists are great for stack implementation. Problem is, they're dynamic, so every time a new element has to be added and there's no more space, the whole list is copied over to a new memory location and the new memory space doubles in size. This is costly.</p>
 
-<p>This is where collection.deque comes to the rescue. We don't have to worry about the dynamic nature of arrays since new locations are allocated as needed. This we got to see practically.</p>
+<p>This is where collection.deque class comes to the rescue. We don't have to worry about the dynamic nature of arrays since new locations are allocated as needed. This we got to see practically.</p>
 
 ### Applications of stack data structures
 1. Function call
@@ -55,3 +55,4 @@
 #### References
 1. [Implementing Stacks in Data Structures](https://www.simplilearn.com/tutorials/data-structure-tutorial/stacks-in-data-structures)
 2. [DSA - Stacks](https://www.youtube.com/watch?v=zwb3GmNAtFk)
+3. [Collections - deque objects](https://docs.python.org/3/library/collections.html#deque-objects)
