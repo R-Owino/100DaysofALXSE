@@ -18,7 +18,7 @@
     <li>Peek - retrieve the topmost element without removing it from the collection</li>
 </ol>
 
-<p>The implementation for these will be don in the subsequent <i>.py</i> files.</p>
+<p>The implementation for these will be done in the subsequent <i>.py</i> files.</p>
 
 ### Implementation of stacks
 1. Implement as an array
