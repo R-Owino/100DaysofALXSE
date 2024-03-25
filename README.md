@@ -21,4 +21,6 @@
     <li style="font-size: 20px;"><a href="https://github.com/R-Owino/100DaysofALXSE/tree/main/Day%203">Python Programming 101</a></li>
     <li style="font-size: 20px;"><a href="https://github.com/R-Owino/100DaysofALXSE/tree/main/Day%204">Basic Data Structures - Arrays</a></li>
     <li style="font-size: 20px;"><a href="https://github.com/R-Owino/100DaysofALXSE/tree/main/Day%205-9">Basic Data Structures - Linked Lists</a></li>
+    <li style="font-size: 20px;"><a href="https://github.com/R-Owino/100DaysofSE/tree/main/Day%2010">Basic Data Structures - Stacks</a></li>
+    <li style="font-size: 20px;"><a href="https://github.com/R-Owino/100DaysofSE/tree/main/Day%2011">Basic Data Structures - Queues</a></li>
 </ol>
