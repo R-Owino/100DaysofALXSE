@@ -3,7 +3,7 @@
 Stacks data structure
 """
 
-###### Implementing stacks as an linked list ######
+###### Implementing stacks using linked lists ######
 """
 - When using arrays to implement a stack we have to pre-define the number of elements the stack will have
 - While this is good in some cases, we might need the stack to be dynamic to take in more elements
@@ -80,6 +80,15 @@ class Stack:
             return "Stack is empty"
         return f"Value of the topmost element in the stack is: {self.head.data}"
     
+    def display(self) -> None:
+        """ Display the stack """
+        if self.is_empty():
+            return "Stack is empty"
+        temp = self.head
+        while temp is not None:
+            print(temp.data, end="-->")
+            temp = temp.next
+    
 
 if __name__ == "__main__":
     stack = Stack()
@@ -93,6 +102,9 @@ if __name__ == "__main__":
     print(stack.push(50))
     print(stack.push(60)) # attempt to push to a full stack
 
+    # display operation
+    print(stack.display())
+
     # peek operation
     print("*****Peek operations*****")
     print(stack.peek())
@@ -105,3 +117,4 @@ if __name__ == "__main__":
     print(stack.pop())
     print(stack.pop())
     print(stack.pop()) # attempt to pop from an empty stack
+    print(stack.display())
