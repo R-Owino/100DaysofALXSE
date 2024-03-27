@@ -35,6 +35,42 @@
 ### Hash functions
 <p>A Hash function is a mathematical function that converts a given numeric or alphanumeric key to a small practical integer value. The mapped integer value is used as an index in the hash table. In simple terms, a hash function maps a significant number or string to a small integer that can be used as the index in the hash table.</p>
 
+<p>A hash function ensures that the elements are uniformly distributed. It produces a unique set of integers within some suitable range in order to reduce the number of collisions.</p>
+
+#### Properties of a good hash function
+1. Uniformity
+<p>A good hash function must map the keys as evenly as possible. This means that the probability of generating every hash value in the output range should roughly be the same. This also helps in reducing collisions.</P>
+
+2. Deterministic
+<p>A hash function must always generate the same hash value for a given input value.</p>
+
+3. Low cost
+<p>execution costs of hash functions must be as low as possible so that hashing is prefered over tradiotional approaches.</p>
+
+#### Examples of hash functions
+1. Division method
+<p>
+
+Given that:
+- k is a key value
+- M is the size of the hash table
+
+this hash function will divide the value k by M and use the remainder obtained as a hash. Generally, M is best suited to be a prime number because that makes sure that the keys are more uniformly distributed
+</p>
+
+2. Mid square method
+<p>
+In this method, the following steps are taken to compute the hash value:
+
+- Square the value of the key
+- The middle r digits of the result are extracted.
+- The result r is the hash obtained.
+
+This method works well because most or all digits of the key-value contribute to the resulting hash.
+</p>
+3. Folding method
+4. Multiplication method 
+
 ### Collisions
 
 #### References
