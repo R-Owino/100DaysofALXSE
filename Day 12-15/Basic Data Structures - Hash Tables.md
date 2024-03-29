@@ -30,7 +30,7 @@
 5. Key retrieval - to retrieve a value, the hash map uses the key to compute the hash, which indicates the bucket. The bucket is then searched to find the matching key and return its corresponding value.
 
 ### Advantages of hashing
-1. Speed - the access time of an element is on average 0(1) (complexities will be covered after this). This makes the lookup action very fast.
+1. Speed - the access time of an element is on average O(1) (complexities will be covered after this). This makes the lookup action very fast.
 
 ### Hash functions
 <p>A Hash function is a mathematical function that converts a given numeric or alphanumeric key to a small practical integer value. The mapped integer value is used as an index in the hash table. In simple terms, a hash function maps a significant number or string to a small integer that can be used as the index in the hash table.</p>
@@ -117,7 +117,7 @@ Once a collision takes place, open addressing (also known as closed hashing ) co
 
 <p>Insertion operation appends the key to the end of the linked list pointed by the hashed location. Deleting a key requires searching the list and removing the element.</p>
 
-<p>The only problem with this technique is if the linked list becpmes large enough, it takes 0(n) time to search one position. This occurs if the hash table is too small and has to accommodate many values.</p>
+<p>The only problem with this technique is if the linked list becpmes large enough, it takes O(n) time to search one position. This occurs if the hash table is too small and has to accommodate many values.</p>
 
 #### References
 1. [Hash Functions and list/types of Hash functions](https://www.geeksforgeeks.org/hash-functions-and-list-types-of-hash-functions/)
