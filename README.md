@@ -10,7 +10,7 @@
         <ul>
             <li style="font-size: 20px;"><a href="https://www.amazon.in/Structures-Algorithms-Undergraduate-Computer-Science/dp/3319130714">Data Structures and Algorithms with Python by Kent D. Lee and Steve Hubbard</a></li>
             <li style="font-size: 20px;"><a href="https://roadmap.sh/datastructures-and-algorithms">Data Structures and Algorithms Roadmap on roadmap.sh</a></li>
-            <li style="font-size: 20px;"><a href="https://www.w3schools.com/dsa/index.php">DSA Tutorial on W3Schools</a></li>
+            <li style="font-size: 20px;"><a href="https://www.geeksforgeeks.org/learn-data-structures-and-algorithms-dsa-tutorial/?ref=lbp">DSA Tutorial on Geeks for Geeks</a></li>
         </ul>
 </p>
 
@@ -23,4 +23,7 @@
     <li style="font-size: 20px;"><a href="https://github.com/R-Owino/100DaysofALXSE/tree/main/Day%205-9">Basic Data Structures - Linked Lists</a></li>
     <li style="font-size: 20px;"><a href="https://github.com/R-Owino/100DaysofSE/tree/main/Day%2010">Basic Data Structures - Stacks</a></li>
     <li style="font-size: 20px;"><a href="https://github.com/R-Owino/100DaysofSE/tree/main/Day%2011">Basic Data Structures - Queues</a></li>
+    <li style="font-size: 20px;"><a href="https://github.com/R-Owino/100DaysofDSA/tree/main/Day%2012-15">Basic Data Structures - Hash Tables</a></li>
+    <li style="font-size: 20px;"><a href="https://github.com/R-Owino/100DaysofDSA/tree/main/Day%2016-18">Algorithmic Complexity</a></li>
+    <li style="font-size: 20px;"><a href="https://github.com/R-Owino/100DaysofDSA/tree/main/Day%2019">Sorting Algorithms Introduction</a></li>
 </ol>
