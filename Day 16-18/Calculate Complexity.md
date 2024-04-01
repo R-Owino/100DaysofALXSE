@@ -17,7 +17,7 @@ There are 3 different notations used to represent complexites:
 </p>
 
 ### Big-O notation
-<p>This is where the main focus lies because it represents the maximum number of steps taken by an algorithm to solve a problem.</p>
+<p>This is where the main focus lies because it represents the maximum number of steps taken by an algorithm to solve a problem. Basically it represents the upper bound of the time taken by an algorithm to complete based on the size of the input. It is an approximation meant to describe the scaling of the algorithm and not the exact time taken.</p>
 
 <p>Time and space complexities of an algorithm are calculated by counting the number of statements the program has to execute.</p>
 
@@ -57,7 +57,7 @@ Let's see the common complexities and how they work:
 </p>
 
 5. <u>Logarithmic complexity</u>
-<p>Logarithmic complexity mixes both linear and exponential complexities i.e inputs increase exponentially while time/space taken to execute the algorithm grow linearly.
+<p>In logarithmic complexity, the algorithm halves the size of the input in each step. As the inputs increase exponentially, time/space taken by the algorithm increase linearly. THis makes it more efficient than linear complexity. Binary search is a classic example of logarithmic time complexity where at every step, the algorithm breaks the list into half until it finds the desired element.
 <figure>
     <img src="../assets/logarithmic.png" alt="log complexity" style="width:50%; height:50%">
     <figcaption>Logarithmic Complexity</figcaption>
@@ -72,6 +72,7 @@ Consider the image below:
     <img src="../assets/comparison.png" alt="complexities" style="width:50%; height:50%">
     <figcaption>Complexities Comparison</figcaption>
 </figure>
+
 
 Ideally, it would be best if an algorithm takes the least amount of space and time while executing, given the worst case scenario.
 
