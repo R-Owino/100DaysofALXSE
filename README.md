@@ -25,5 +25,5 @@
     <li style="font-size: 20px;"><a href="https://github.com/R-Owino/100DaysofSE/tree/main/Day%2011">Basic Data Structures - Queues</a></li>
     <li style="font-size: 20px;"><a href="https://github.com/R-Owino/100DaysofDSA/tree/main/Day%2012-15">Basic Data Structures - Hash Tables</a></li>
     <li style="font-size: 20px;"><a href="https://github.com/R-Owino/100DaysofDSA/tree/main/Day%2016-18">Algorithmic Complexity</a></li>
-    <li style="font-size: 20px;"><a href="https://github.com/R-Owino/100DaysofDSA/tree/main/Day%2019">Sorting Algorithms Introduction</a></li>
+    <li style="font-size: 20px;"><a href="https://github.com/R-Owino/100DaysofDSA/tree/main/Day%2019">Sorting Algorithms</a></li>
 </ol>
