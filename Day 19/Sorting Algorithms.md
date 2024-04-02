@@ -51,17 +51,25 @@ Online sorting algorithms can handle the case when all the data may not be avail
 </p>
 
 ### Some common sorting algorithms
-Selection sort
-Bubble sort
-Insertion sort
-Merge sort
-Quick sort
-Heap sort
-Counting sort
-Radix sort
-Bucket sort
+1. Selection sort
+<p>
+Selection sort works by dividing an array into 2 parts- sorted and unsorted. At first, all the elements are in the unsorted part and the sorted part is empty. The algorithm repeatedly goes through the elements, finds the smallest (or largest, depending on the sort order) one and moves it to the sorted part until all the elements are sorted.
+
+
+This is not very effective on large arrays as the time complexity is O(n²) but really good when memory is a priority because it does no more than n swaps - no copies need to be made.
+</p>
+
+2. Bubble sort
+3. Insertion sort
+4. Merge sort
+5. Quick sort
+6. Heap sort
+7. Counting sort
+8. Radix sort
+9. Bucket sort
 
 #### References
 1. [Sorting algorithm](https://en.wikipedia.org/wiki/Sorting_algorithm)
 2. [Sorting Algorithms Explained with Examples in JavaScript, Python, Java, and C++](https://www.freecodecamp.org/news/sorting-algorithms-explained-with-examples-in-python-java-and-c/)
 3. [Sorting Algorithm Animations](https://www.toptal.com/developers/sorting-algorithms)
+4. [Selection Sort with Gypsy folk dance](https://www.youtube.com/watch?v=Ns4TPTC8whw)
