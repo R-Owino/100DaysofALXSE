@@ -57,9 +57,36 @@ Selection sort works by dividing an array into 2 parts- sorted and unsorted. At 
 
 
 This is not very effective on large arrays as the time complexity is O(n²) but really good when memory is a priority because it does no more than n swaps - no copies need to be made.
+
+
+Properties of selection sort algorithm:
+- Space Complexity:  O(n)
+- Time Complexity:  O(n²)
+- Sorting in Place:  Yes
+- Stable:  No
 </p>
 
 2. Bubble sort
+<p>
+From its name, and picturing how the biggest bubbles "bubble" to the top, the largest element bubbles to the its intended location. The algorithm repeatedly swaps adjacent elements until the entire list is sorted in ascending order.
+
+
+Like selection sort, it has a worst-case performance of O(n²) so it is rarely used to sort large unordered data sets.
+
+
+Bubble sort can also be used efficiently on a list of any length that is nearly sorted (that is, the elements are not significantly out of place). 
+
+For example, if any number of elements are out of place by only one position (e.g. 0123546789 and 1032547698), bubble sort's exchange will get them in order on the first pass, the second pass will find all elements in order, so the sort will take only 2n time.
+
+
+Properties of bubble sort algorithm:
+- Space complexity: O(1)
+- Best case performance: O(n)
+- Average case performance: O(n²)
+- Worst case performance: O(n²)
+- Stable: Yes
+</p>
+
 3. Insertion sort
 4. Merge sort
 5. Quick sort
@@ -73,3 +100,4 @@ This is not very effective on large arrays as the time complexity is O(n²) but 
 2. [Sorting Algorithms Explained with Examples in JavaScript, Python, Java, and C++](https://www.freecodecamp.org/news/sorting-algorithms-explained-with-examples-in-python-java-and-c/)
 3. [Sorting Algorithm Animations](https://www.toptal.com/developers/sorting-algorithms)
 4. [Selection Sort with Gypsy folk dance](https://www.youtube.com/watch?v=Ns4TPTC8whw)
+5. [Bubble sort with Hungarian folk dance](https://www.youtube.com/watch?v=Iv3vgjM8Pv4)
