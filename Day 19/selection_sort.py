@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """ Selection sort algorithm """
 
+import random
+
 """
 Steps:
 - For each element in the array:
@@ -34,7 +36,10 @@ def selection_sort_desc(arr):
     return arr
 
 # Test cases
-test_list = [40, 70, 100, 10, 90, 80, 20, 50, 60, 40, 30]
+# generate random numbers for testing
+test_list = []
+for _ in range(20):
+    test_list.append(random.randint(0, 100))
 print(f"Original list: {test_list}")
 
 sort_asc = selection_sort_asc(test_list)
