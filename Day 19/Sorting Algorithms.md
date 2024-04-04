@@ -88,6 +88,26 @@ Properties of bubble sort algorithm:
 </p>
 
 3. Insertion sort
+<p>
+From its name, insertion sort works by taking elements from the list one by one and inserting them in their correct position into a new sorted list, similar to how a player would sort playing cards in their hand. It is a simple algorithm that is much less efficient on large lists compared to more advanced algorithms.
+
+
+It provides advantages such as being an easy to understand algorithm, performs well with small lists or lists that are partially sorted and can sort the list as it receives it.
+
+
+The main disadvantage is it's expensive as it requires shifting the following elements over by one.
+
+
+Properties of insertion sort:
+- Space Complexity: O(1)
+- Time Complexity: O(n), O(n²), O(n²) for Best, Average, Worst cases respectively.
+- Best Case: array is already sorted
+- Average Case: array is randomly sorted
+- Worst Case: array is reversely sorted.
+- Sorting In Place: Yes
+- Stable: Yes
+</p>
+
 4. Merge sort
 5. Quick sort
 6. Heap sort
@@ -101,3 +121,4 @@ Properties of bubble sort algorithm:
 3. [Sorting Algorithm Animations](https://www.toptal.com/developers/sorting-algorithms)
 4. [Selection Sort with Gypsy folk dance](https://www.youtube.com/watch?v=Ns4TPTC8whw)
 5. [Bubble sort with Hungarian folk dance](https://www.youtube.com/watch?v=Iv3vgjM8Pv4)
+6. [Insertion sort with Romanian folk dance](https://www.youtube.com/watch?v=EdIKIf9mHk0)
