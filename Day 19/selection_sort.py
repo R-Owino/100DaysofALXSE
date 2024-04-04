@@ -23,7 +23,7 @@ def selection_sort_asc(arr):
         arr[i], arr[min_index] = arr[min_index], arr[i]
     return arr
 
-def selection_sort_desc(arr):
+def selection_sort_desc(arr: list) -> list:
     """ Selection sort in descending order """
     if len(arr) == 0:
         return "List is empty"
