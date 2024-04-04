@@ -13,7 +13,7 @@ Steps:
      ascending order
 """
 
-def bubble_sort(arr):
+def bubble_sort(arr: list) -> list:
     """ Sort using bubble sort """
     if len(arr) == 0:
         return "List is empty"
