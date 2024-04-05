@@ -109,6 +109,21 @@ Properties of insertion sort:
 </p>
 
 4. Merge sort
+<p>
+Merge sort algorithm is a divide and conquer algorithm that takes the advantage of the ease of merging already sorted lists into a new sorted lists. It works by dividing the input array into two halves, calls itself for the two halves then merges the two sorted halves.
+
+
+Of the algorithms discussed so far, this is the first that works efficiently with large lists because it's worst case running time is O(n log n). The downside is it requires an additional O(n) space complexity compared to bubble, selection and insertion sorts and involves large number of copies in simple implementations.
+
+
+Properties of merge sort:
+- Space Complexity: O(n)
+- Time Complexity: O(n log n)
+- Sorting In Place: No in a typical implementation
+- Stable: Yes
+- Parallelizable :yes
+</p>
+
 5. Quick sort
 6. Heap sort
 7. Counting sort
@@ -122,3 +137,4 @@ Properties of insertion sort:
 4. [Selection Sort with Gypsy folk dance](https://www.youtube.com/watch?v=Ns4TPTC8whw)
 5. [Bubble sort with Hungarian folk dance](https://www.youtube.com/watch?v=Iv3vgjM8Pv4)
 6. [Insertion sort with Romanian folk dance](https://www.youtube.com/watch?v=EdIKIf9mHk0)
+7. [Merge sort with Transylvanian saxon](https://www.youtube.com/watch?v=dENca26N6V4&list=PLOmdoKois7_FK-ySGwHBkltzB11snW7KQ&index=3)
