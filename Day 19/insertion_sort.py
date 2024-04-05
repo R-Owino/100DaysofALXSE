@@ -15,6 +15,8 @@ Steps:
 
 def insertion_sort(array: list) -> list:
     """ Sort array using insertion sort algorithm """
+    if len(array) == 0:
+        return "List is empty"
 
     for i in range(1, len(array)):
         key = array[i]
