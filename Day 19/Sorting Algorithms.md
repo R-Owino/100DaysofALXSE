@@ -124,11 +124,29 @@ Properties of merge sort:
 - Parallelizable :yes
 </p>
 
-5. Quick sort
+5. Quicksort
+<p>
+Quicksort is an in-place divide and conquer algorithm that uses a partition technique to sort elements. The partition operation uses a randomly chosen pivot element. Smaller elements are moved to the left of the pivot elememt and larger elements are moved to the right. The sublists are then sorted recursively resulting in an avarage time of O(n log n) with a low overhead making it a popular algorithm.
+
+
+The only caveat with quicksort is that its worst case performance is O(n²). This is rare, but in naive implementations, where the smallest or largest elemenets are chosen as the pivot, this occurs for sorted data.
+
+
+The issue in quicksort is choosing a good pivot element as consistently poor choices of pivots can result in drastically slower O(n²) performance, but good choice of pivots yields O(n log n) performance, which is asymptotically optimal.
+
+
+Properties of quicksort:
+- Space complxity: O(n)
+- Best case time complexity: O(n log n)
+- Worst case time complexity: O(n²)
+- Stable: No
+</p>
+
 6. Heap sort
 7. Counting sort
 8. Radix sort
 9. Bucket sort
+10. Timsort 
 
 #### References
 1. [Sorting algorithm](https://en.wikipedia.org/wiki/Sorting_algorithm)
@@ -138,3 +156,5 @@ Properties of merge sort:
 5. [Bubble sort with Hungarian folk dance](https://www.youtube.com/watch?v=Iv3vgjM8Pv4)
 6. [Insertion sort with Romanian folk dance](https://www.youtube.com/watch?v=EdIKIf9mHk0)
 7. [Merge sort with Transylvanian saxon](https://www.youtube.com/watch?v=dENca26N6V4&list=PLOmdoKois7_FK-ySGwHBkltzB11snW7KQ&index=3)
+8. [Quick sort with Hungarian folk dance](https://www.youtube.com/watch?v=3San3uKKHgg)
+9. [Median of medians algorithm to get the pivot value in quicksort](https://www.linkedin.com/advice/0/what-advantages-disadvantages-median-of-medians-algorithm)
