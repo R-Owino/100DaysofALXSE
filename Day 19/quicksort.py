@@ -11,7 +11,7 @@ Steps:
 4. Merge the two halves
 """
 
-def quicksort(arr):
+def quicksort(arr: list) -> list:
     """ 
     Quick sort implementation 
     - Divides the array into 3 parts:
@@ -28,7 +28,7 @@ def quicksort(arr):
         greater = [x for x in arr if x > pivot]
         return quicksort(less) + equal + quicksort(greater)
 
-def select_pivot(arr):
+def select_pivot(arr: list) -> int:
     """ select the pivot element using the median of medians algorithm """
     if len(arr) <= 5:
         return sorted(arr)[len(arr) // 2]
