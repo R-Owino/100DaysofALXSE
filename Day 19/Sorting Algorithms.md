@@ -157,6 +157,19 @@ Properties of heapsort:
 </p>
 
 7. Counting sort
+<p>
+Counting sort is a sorting technique based on keys between a specific range. It works by first creating a list of the count of occurences of each unique value in the list. Then it creates a final sorted list based on the list of counts. 
+
+It is applicable when each input is known to belong to a particular set, S, of possibilities. The algorithm runs in O(|S| + n) time and O(|S|) memory where n is the length of the input.  This sorting algorithm often cannot be used because S needs to be reasonably small for the algorithm to be efficient, but it is extremely fast and demonstrates great asymptotic behavior as n increases.
+
+Properties of counting sort:
+- Space complexity: O(S)
+- Best case performance: O(n+S)
+- Average case performance: O(n+S)
+- Worst case performance: O(n+S)
+- Stable: Yes (S is the range of the elements in the array)
+</p>
+
 8. Radix sort
 9. Bucket sort
 10. Timsort
@@ -174,3 +187,4 @@ Properties of heapsort:
 9. [Median of medians algorithm to get the pivot value in quicksort](https://www.linkedin.com/advice/0/what-advantages-disadvantages-median-of-medians-algorithm)
 10. [Heap Sort in a Nutshell](https://www.youtube.com/watch?v=MtQL_ll5KhQ)
 11. [Investigating Heap Sort - Why Is Heap Sort Θ(nlogn)?](https://www.youtube.com/watch?v=k72DtCnY4MU)
+12. [Counting sort](https://www.youtube.com/watch?v=7zuGmKfUt7s)
