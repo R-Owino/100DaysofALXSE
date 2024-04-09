@@ -64,10 +64,10 @@ This is not very effective on large arrays as the time complexity is O(n²) but 
 
 Properties of selection sort algorithm:
 
--   Space Complexity: O(n)
--   Time Complexity: O(n²)
--   Sorting in Place: Yes
--   Stable: No
+- Space Complexity: O(n)
+- Time Complexity: O(n²)
+- Sorting in Place: Yes
+- Stable: No
 </p>
 
 2. Bubble sort
@@ -82,11 +82,11 @@ For example, if any number of elements are out of place by only one position (e.
 
 Properties of bubble sort algorithm:
 
--   Space complexity: O(1)
--   Best case performance: O(n)
--   Average case performance: O(n²)
--   Worst case performance: O(n²)
--   Stable: Yes
+- Space complexity: O(1)
+- Best case performance: O(n)
+- Average case performance: O(n²)
+- Worst case performance: O(n²)
+- Stable: Yes
 </p>
 
 3. Insertion sort
@@ -99,13 +99,13 @@ The main disadvantage is it's expensive as it requires shifting the following el
 
 Properties of insertion sort:
 
--   Space Complexity: O(1)
--   Time Complexity: O(n), O(n²), O(n²) for Best, Average, Worst cases respectively.
--   Best Case: array is already sorted
--   Average Case: array is randomly sorted
--   Worst Case: array is reversely sorted.
--   Sorting In Place: Yes
--   Stable: Yes
+- Space Complexity: O(1)
+- Time Complexity: O(n), O(n²), O(n²) for Best, Average, Worst cases respectively.
+- Best Case: array is already sorted
+- Average Case: array is randomly sorted
+- Worst Case: array is reversely sorted.
+- Sorting In Place: Yes
+- Stable: Yes
 </p>
 
 4. Merge sort
@@ -116,11 +116,11 @@ Of the algorithms discussed so far, this is the first that works efficiently wit
 
 Properties of merge sort:
 
--   Space Complexity: O(n)
--   Time Complexity: O(n log n)
--   Sorting In Place: No in a typical implementation
--   Stable: Yes
--   Parallelizable :yes
+- Space Complexity: O(n)
+- Time Complexity: O(n log n)
+- Sorting In Place: No in a typical implementation
+- Stable: Yes
+- Parallelizable :yes
 </p>
 
 5. Quicksort
@@ -133,10 +133,10 @@ The issue in quicksort is choosing a good pivot element as consistently poor cho
 
 Properties of quicksort:
 
--   Space complxity: O(n)
--   Best case time complexity: O(n log n)
--   Worst case time complexity: O(n²)
--   Stable: No
+- Space complxity: O(n)
+- Best case time complexity: O(n log n)
+- Worst case time complexity: O(n²)
+- Stable: No
 </p>
 
 6. Heapsort
@@ -160,17 +160,27 @@ Properties of heapsort:
 <p>
 Counting sort is a sorting technique based on keys between a specific range. It works by first creating a list of the count of occurences of each unique value in the list. Then it creates a final sorted list based on the list of counts. 
 
-It is applicable when each input is known to belong to a particular set, S, of possibilities. The algorithm runs in O(|S| + n) time and O(|S|) memory where n is the length of the input.  This sorting algorithm often cannot be used because S needs to be reasonably small for the algorithm to be efficient, but it is extremely fast and demonstrates great asymptotic behavior as n increases.
+It is applicable when each input is known to belong to a particular set, S, of possibilities. The algorithm runs in O(|k| + n) time and O(|k|) memory where n is the length of the input.  This sorting algorithm often cannot be used because k needs to be reasonably small for the algorithm to be efficient, but it is extremely fast and demonstrates great asymptotic behavior as n increases.
 
 Properties of counting sort:
-- Space complexity: O(S)
-- Best case performance: O(n+S)
-- Average case performance: O(n+S)
-- Worst case performance: O(n+S)
-- Stable: Yes (S is the range of the elements in the array)
+- Space complexity: O(k)
+- Best case performance: O(n+k)
+- Average case performance: O(n+k)
+- Worst case performance: O(n+k)
+- Stable: Yes (k is the range of the elements in the array)
 </p>
 
 8. Radix sort
+<p>
+Yesterday, I looked into counting sort (above), it's a prerequisite for radix sort. While quicksort, merge sort and heapsort are comparison-based, countsort is not. It has a complexity of O(n+k). So, if k is O(n), CountSort becomes linear sorting, which is better than comparison based sorting algorithms that have O(nlogn) time complexity. The idea is to extend the countsort algorithm to get a better time complexity when k goes O(n2). Thus, Radix Sort.
+
+The key idea behind Radix Sort is to exploit the concept of place value. It assumes that sorting numbers digit by digit will eventually result in a fully sorted list. Radix Sort can be performed using different variations, such as Least Significant Digit (LSD) Radix Sort or Most Significant Digit (MSD) Radix Sort.
+
+<p>How the radix sort algorithm works?</p>
+
+For each digit i where i varies from the least significant digit to the most significant digit of a number (ones, tens, hundreds ...), sort input array using countsort algorithm according to i<i>th</i> digit. We used count sort because it is a stable sort.
+
+</p>
 9. Bucket sort
 10. Timsort
 
@@ -188,3 +198,5 @@ Properties of counting sort:
 10. [Heap Sort in a Nutshell](https://www.youtube.com/watch?v=MtQL_ll5KhQ)
 11. [Investigating Heap Sort - Why Is Heap Sort Θ(nlogn)?](https://www.youtube.com/watch?v=k72DtCnY4MU)
 12. [Counting sort](https://www.youtube.com/watch?v=7zuGmKfUt7s)
+13. [Radix Sort](https://www.geeksforgeeks.org/radix-sort/)
+14. [Radix sort - visual](https://www.youtube.com/watch?v=GUHGMtNo6RQ)
