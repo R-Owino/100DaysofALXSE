@@ -24,7 +24,7 @@ Steps:
         - output list = [2, 2, 5, 5, 6, 8, 8, 8]
 """
 
-def counting_sort(arr: list) -> list:
+def countingSort(arr: list) -> list:
     """ Counting sort implementation """
     if len(arr) == 0:
         return "List is empty"
@@ -58,5 +58,5 @@ for _ in range(0):
     test_list.append(random.randint(0, 100))
 print(f"Original list: {test_list}")
 
-sorted = counting_sort(test_list)
+sorted = countingSort(test_list)
 print(f"Sorted list: {sorted}")
