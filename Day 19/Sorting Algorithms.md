@@ -180,8 +180,25 @@ The key idea behind Radix Sort is to exploit the concept of place value. It assu
 
 For each digit i where i varies from the least significant digit to the most significant digit of a number (ones, tens, hundreds ...), sort input array using countsort algorithm according to i<i>th</i> digit. We used count sort because it is a stable sort.
 
+Properties of radix sort:
+- Space complxity: O(n)
+- Worst case performance: O(nk) where k is the number of digits
+- Average case performance: O(nk)
+- Best case performance: Ω(n+k)
+- Stable: 
+
 </p>
+
 9. Bucket sort
+<p>
+Bucket sort is a divide-and-conquer sorting algorithm that generalizes counting sort by partitioning an array into a finite number of buckets. Each bucket is then sorted individually, either using a different sorting algorithm, or by recursively applying the bucket sorting algorithm.
+
+A bucket sort works best when the elements of the data set are evenly distributed across all buckets. For example, when the input array is a large array of floating point integers distributed uniformly between an upper and lower bound.
+
+Other sorting algorithms like merge sort, heap sort, or quick sort could be used. However, those algorithms guarantee a best case time complexity of O(nlogn). Using bucket sort, sorting the same array can be completed in O(n) time.
+
+</p>
+
 10. Timsort
 
 #### References
@@ -200,3 +217,4 @@ For each digit i where i varies from the least significant digit to the most sig
 12. [Counting sort](https://www.youtube.com/watch?v=7zuGmKfUt7s)
 13. [Radix Sort](https://www.geeksforgeeks.org/radix-sort/)
 14. [Radix sort - visual](https://www.youtube.com/watch?v=GUHGMtNo6RQ)
+15. [Bucket sort](https://www.youtube.com/watch?v=VuXbEb5ywrU)
