@@ -181,11 +181,11 @@ The key idea behind Radix Sort is to exploit the concept of place value. It assu
 For each digit i where i varies from the least significant digit to the most significant digit of a number (ones, tens, hundreds ...), sort input array using countsort algorithm according to i<i>th</i> digit. We used count sort because it is a stable sort.
 
 Properties of radix sort:
-- Space complxity: O(n)
+- Space complexity: O(n)
 - Worst case performance: O(nk) where k is the number of digits
 - Average case performance: O(nk)
 - Best case performance: Ω(n+k)
-- Stable: 
+- Stable: yes - both Least Significant Digit and Most Significant Digit radix sort
 
 </p>
 
@@ -200,6 +200,21 @@ Other sorting algorithms like merge sort, heap sort, or quick sort could be used
 </p>
 
 10. Timsort
+<p>
+Timsort algorithm is a hybrid, stable sorting algorithm, derived from merge sort and insertion sort that finds subsequences of the data that are already ordered (runs) and uses them to sort the remainder more efficiently. This is done by merging runs until certain criteria are fulfilled.
+
+It works by taking advantage of runs of consecutive ordered elements that already exist in most real-world data, natural runs. It iterates over the data collecting elements into runs and simultaneously putting those runs in a stack. Whenever the runs on the top of the stack match a merge criterion, they are merged. This goes on until all data is traversed; then, all runs are merged two at a time and only one sorted run remains.
+
+The main advantage of merging ordered runs instead of merging fixed size sub-lists (as done by traditional mergesort) is that it decreases the total number of comparisons needed to sort the entire list.
+
+Properties of timsort:
+- Space Complexity: O(n)
+- Best case complexity: O(n)
+- Average case complexity: O(nlogn)
+- Worst case complexity: O(nlogn)
+- Stable: Yes
+- Inplace sorting: no, it requires extra space
+</p>
 
 #### References
 
@@ -218,3 +233,7 @@ Other sorting algorithms like merge sort, heap sort, or quick sort could be used
 13. [Radix Sort](https://www.geeksforgeeks.org/radix-sort/)
 14. [Radix sort - visual](https://www.youtube.com/watch?v=GUHGMtNo6RQ)
 15. [Bucket sort](https://www.youtube.com/watch?v=VuXbEb5ywrU)
+16. [TimSort](https://www.youtube.com/watch?v=_dlzWEJoU7I)
+17. [Timsort algorithm](https://en.wikipedia.org/wiki/Timsort)
+18. [TimSort Algorithm](https://www.awesomealgorithms.com/home/tim-sort)
+19. [TimSort implementation in Python](https://www.pythonpool.com/python-timsort/)
