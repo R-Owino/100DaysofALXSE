@@ -12,7 +12,14 @@ Steps:
 """
 
 def linear_search(arr: list, key: int, x: int) -> int:
-    """ Linear search implementation """
+    """ 
+    Linear search implementation 
+    
+    Args:
+        arr: list of elements
+        key: element to search
+        x: length of the array
+    """
     for i in range(0, x):
         if arr[i] == key:
             return i
