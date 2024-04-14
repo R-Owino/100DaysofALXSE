@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 """ Binary Search algorithm """
 
-import random
-
 """
 Steps:
 1. Divide the array into two halves by calculating the mid element
@@ -14,15 +12,18 @@ Steps:
 Binary search can be done iteratively and recursively. Let's see both below
 """
 
-def bin_search(arr: list, key: int, left: int, right: int) -> int:
+def binary_search_iterative(arr: list, key: int, left: int, right: int) -> int:
     """
-    Implementing binary search iteratively
+    Perform an iterative binary search on a sorted array
 
     Args:
-        arr: list of elements
-        key: element to search
-        left: left search space
-        right: right search space
+        arr (list): The sorted array to search
+        key (int): The value to search for
+        left (int): The leftmost index of the array segment to search
+        right (int): The rightmost index of the array segment to search
+
+    Returns:
+        int: The index of the key in the array, or -1 if the key is not found
     """
     while left <= right:
         mid = left + (right - left) // 2
@@ -43,15 +44,18 @@ def bin_search(arr: list, key: int, left: int, right: int) -> int:
     # element not found
     return -1
 
-def binary_search(arr: list, key: int, left: int, right: int) -> int:
+def binary_search_recursive(arr: list, key: int, left: int, right: int) -> int:
     """ 
-    Implementing binary search recursively
+    Perform an recursive binary search on a sorted array
 
     Args:
-        arr: list of elements
-        key: element to search
-        left: left search space
-        right: right search space
+        arr (list): The sorted array to search
+        key (int): The value to search for
+        left (int): The leftmost index of the array segment to search
+        right (int): The rightmost index of the array segment to search
+
+    Returns:
+        int: The index of the key in the array, or -1 if the key is not found
     """
 
     # base case
@@ -67,21 +71,31 @@ def binary_search(arr: list, key: int, left: int, right: int) -> int:
     # if the element is smaller than mid, then it can only
     # be present in the left subarray
     elif arr[mid] < key:
-        return binary_search(arr, key, mid + 1, right)
+        return binary_search_recursive(arr, key, mid + 1, right)
 
     # else the element can only be present in the right subarray
     else:
-        return binary_search(arr, key, left, mid - 1)
-    
+        return binary_search_recursive(arr, key, left, mid - 1)
 
 # test case
-test_list = []
-for _ in range(10):
-    test_list.append(random.randint(0, 100))
+test_list = [2, 3, 4, 10, 40]
+# for _ in range(10):
+#     test_list.append(random.randint(0, 100))
 print(f"Original list: {test_list}")
 
 key = int(input("Enter the key to search: "))
 x = len(test_list)
 
-result = bin_search(test_list, key, 0, x-1)
+# iterative search
+result = binary_search_iterative(test_list, key, 0, x-1)
+if result == -1:
+    print("Key not found")
+else:
+    print(f"Key found at index {result} iteratively")
 
+# recursive search
+result = binary_search_recursive(test_list, key, 0, x-1)
+if result == -1:
+    print("Key not found")
+else:
+    print(f"Key found at index {result} recursively")
