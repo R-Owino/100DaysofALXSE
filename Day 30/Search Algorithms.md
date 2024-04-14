@@ -66,6 +66,18 @@ The time complexity of sentinel search is O(n) in the worst case and O(1) in the
 </p>
 
 3. Binary Search
+<p>
+Binary search algorithm follows the divide and conquer strategy to find an element. It works on a sorted array by repeatedly dividing the search interval in half. The idea of binary search is to use the information that the array is sorted and reduce the time complexity to O(log N).
+
+It works perfectly under the following conditions:
+- The data structure must be sorted.
+- Access to any element of the data structure takes constant time.
+
+This is how it operates:
+- Initially, the search space is the entire array and the target is compared with the middle element of the array.
+- If they are not equal, the half in which the target cannot lie is eliminated and the search continues on the remaining half, again taking the middle element to compare to the target, and repeating this until the target is found.
+- If the search ends with the remaining half being empty, the target is not in the array.
+</p>
 
 4. Depth-first search
 <p>
