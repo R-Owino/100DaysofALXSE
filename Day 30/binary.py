@@ -121,15 +121,13 @@ key = int(input("Enter the key to search: "))
 x = len(test_list)
 
 # iterative search
-result = binary_search_iterative(test_list, key, 0, x-1)
+result = binary_search_iterative(sorted, key, 0, x-1)
 if result == -1:
     print("Key not found")
-else:
-    print(f"Key found at index {result} iteratively")
+print(f"{key} found at index {result} iteratively")
 
 # recursive search
-result = binary_search_recursive(test_list, key, 0, x-1)
+result = binary_search_recursive(sorted, key, 0, x-1)
 if result == -1:
     print("Key not found")
-else:
-    print(f"Key found at index {result} recursively")
+print(f"{key} found at index {result} recursively")
