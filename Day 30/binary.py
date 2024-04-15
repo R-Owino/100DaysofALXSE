@@ -1,16 +1,47 @@
 #!/usr/bin/python3
 """ Binary Search algorithm """
 
+import random 
+
 """
 Steps:
 1. Divide the array into two halves by calculating the mid element
 2. Compare the target element with the mid element. If the target is less than the mid element,
    move to the left, and if it is greater than the mid, move to the right of the search space
 3. Repeat step 1 and 2 until the target is found
-4. If the key matches the value of the mid element, stop the search and return the index where the value is
+4. If the key matches the value of the mid element, stop the search and
+   return the index where the value is
 
 Binary search can be done iteratively and recursively. Let's see both below
+First, we'll sort the list using quick sort, then we'll perform binary search
+Ideally, quicksort should be imported from "Day 19" directory, but the space is giving
+a hard time, so we'll paste the quick sort code here
 """
+
+def quicksort(arr: list) -> list:
+    """ 
+    Quick sort implementation 
+    - Divides the array into 3 parts:
+        - less than pivot
+        - equal to pivot
+        - greater than pivot
+    """
+    if len(arr) <= 1:
+        return arr
+    else:
+        pivot = select_pivot(arr)
+        less = [x for x in arr if x < pivot]
+        equal = [x for x in arr if x == pivot]
+        greater = [x for x in arr if x > pivot]
+        return quicksort(less) + equal + quicksort(greater)
+
+def select_pivot(arr: list) -> int:
+    """ select the pivot element using the median of medians algorithm """
+    if len(arr) <= 5:
+        return sorted(arr)[len(arr) // 2]
+    sublists = [sorted(arr[i:i+5]) for i in range(0, len(arr), 5)]
+    medians = [sl[len(sl) // 2] for sl in sublists]
+    return select_pivot(medians)
 
 def binary_search_iterative(arr: list, key: int, left: int, right: int) -> int:
     """
@@ -79,9 +110,12 @@ def binary_search_recursive(arr: list, key: int, left: int, right: int) -> int:
 
 # test case
 test_list = [2, 3, 4, 10, 40]
-# for _ in range(10):
-#     test_list.append(random.randint(0, 100))
+for _ in range(10):
+    test_list.append(random.randint(0, 100))
 print(f"Original list: {test_list}")
+
+sorted = quicksort(test_list)
+print(f"Sorted list: {sorted}")
 
 key = int(input("Enter the key to search: "))
 x = len(test_list)
