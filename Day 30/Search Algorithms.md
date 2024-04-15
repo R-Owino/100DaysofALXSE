@@ -79,6 +79,17 @@ This is how it operates:
 - If the search ends with the remaining half being empty, the target is not in the array.
 </p>
 
+4. Ternary binary search
+<p>
+A binary search algorithm, but instead of dividing the list into 2 parts, the list is divided into 3 parts - we now have 2 mid points. This also means it is a divide and conquer algorithm. The mid points are used to determine which part the target element is because at each iteration, the algorithm ignores ⅓ of the list and proceeds to search in the remaining ⅔.
+
+The time complexity of ternary search is O(log<sub>3</sub>n).
+
+The operations is just the same as in normal binary search, only that instead of dividing into 2 parts, it divides the array into 3 parts.
+
+Also, like in binary search, the list must be sorted first before searching an element, and searching for an element that is duplicated returns the position of the first occurance of that element.
+</p>
+
 4. Depth-first search
 <p>
 Used more intricately in data structures like trees and graphs. It explores the depth of a branch before breadth.
@@ -94,3 +105,7 @@ Also used in tree and graph data structures. It explores all the neighboring nod
 2. [Search Algorithms – Linear Search and Binary Search Code Implementation and Complexity Analysis](https://www.freecodecamp.org/news/search-algorithms-linear-and-binary-search-explained/)
 3. [Searching algorithms](https://www.geeksforgeeks.org/searching-algorithms/)
 4. [Linear search](https://www.geeksforgeeks.org/linear-search/)
+5. [Sentinel linear search](https://www.askpython.com/python/examples/sentinel-search)
+6. [Binary search](https://www.geeksforgeeks.org/binary-search/)
+7. [Ternary search](https://www.geeksforgeeks.org/ternary-search/)
+8. [Ternary search with example](https://www.youtube.com/watch?v=WyWL1PBNvb8)
