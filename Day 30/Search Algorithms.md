@@ -90,6 +90,19 @@ The operations is just the same as in normal binary search, only that instead of
 Also, like in binary search, the list must be sorted first before searching an element, and searching for an element that is duplicated returns the position of the first occurance of that element.
 </p>
 
+5. Jump Search
+<p>
+Also called block search algorithm, jump search lies between linear search and binary search. Recall, linear search works well with small arrays and binary search works well with larger sorted arrays. For this reason, jump search is also applied to sorted arrays.
+
+The main idea in jump search is to search fewer elements than in linear search at the speed of binary search.
+
+Here's how it works:
+As the name suggests, it skips a predetermined block of elements until it gets to the block who's last element is greater than the target element.
+Predetermined because the size of the block to be skipped is the squareroot of the length of the array.
+When the block that possibly contains the target element is found, the target element is searched for linearly.
+This makes the time complexity of jump search between O(n) and O(log n)99
+</p>
+
 4. Depth-first search
 <p>
 Used more intricately in data structures like trees and graphs. It explores the depth of a branch before breadth.
