@@ -100,7 +100,7 @@ Here's how it works:
 As the name suggests, it skips a predetermined block of elements until it gets to the block who's last element is greater than the target element.
 Predetermined because the size of the block to be skipped is the squareroot of the length of the array.
 When the block that possibly contains the target element is found, the target element is searched for linearly.
-This makes the time complexity of jump search between O(n) and O(log n)99
+This makes the time complexity of jump search between O(n) and O(log n)
 </p>
 
 4. Depth-first search
