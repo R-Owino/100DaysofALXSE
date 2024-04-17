@@ -31,9 +31,11 @@ def interpolation_search(arr: List[int], key: int) -> Optional[int]:
     right = len(arr) - 1
 
     while left <= right and key >= arr[left] and key <= arr[right]:
-        # find the position of the element
+        # probe the position of the key
         pos = left + ((key - arr[left]) * (right - left)) // (arr[right] - arr[left])
 
+        # if there is a match return the index of current element
+        # else move the search to the left or right subarrays
         if arr[pos] == key:
             return pos
         elif arr[pos] < key:
