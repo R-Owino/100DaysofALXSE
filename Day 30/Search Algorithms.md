@@ -100,7 +100,36 @@ Here's how it works:
 As the name suggests, it skips a predetermined block of elements until it gets to the block who's last element is greater than the target element.
 Predetermined because the size of the block to be skipped is the squareroot of the length of the array.
 When the block that possibly contains the target element is found, the target element is searched for linearly.
-This makes the time complexity of jump search between O(n) and O(log n)
+This makes the time complexity of jump search between O(n) and O(log n) i.e O(? n)
+</p>
+
+6. Interpolation Search
+<p>
+Interpolation search is an improvement to the binary search. It searches for an element in a sorted uniformly distributed array i.e the interval between the element should be uniform. It works by probing the position of the target value.
+
+<details>
+  <summary><strong>Recap 🔄</strong></summary>
+
+  - Binary search algorithm searches for an element by dividing the sorted array into 2 parts.
+  - It does not take advantage of probing for the position of the target element.
+</details>
+
+In interpolation search, a formula is used to find the probe position, an index that is close to the target element. If the target element is larger than the element at the probe position, the search moves to the right of the probe position. Otherwise, the item is searched in the sub-array to the left of the middle item. This process continues on the sub-array as well until the size of subarray reduces to zero.
+
+The following formula is used to calculate the probe position:
+
+
+$$mid\, =\, Lo\, +\, \frac{\left ( Hi\, -\, Lo \right )\ast \left ( X\, -\, A\left [ Lo \right ] \right )}{A\left [ Hi \right ]\, -\, A\left [ Lo \right ]}$$
+
+where:
+```math
+A = list
+Lo = lowest index of the list
+Hi = highest index of the list
+A[n] = value stored at index n in the list
+```
+
+The time complexity of interpolation search is Ο(log (log n))
 </p>
 
 4. Depth-first search
@@ -122,3 +151,8 @@ Also used in tree and graph data structures. It explores all the neighboring nod
 6. [Binary search](https://www.geeksforgeeks.org/binary-search/)
 7. [Ternary search](https://www.geeksforgeeks.org/ternary-search/)
 8. [Ternary search with example](https://www.youtube.com/watch?v=WyWL1PBNvb8)
+9. [Jump search](https://www.geeksforgeeks.org/jump-search/)
+10. [Jump search visualisation](https://harkishen-singh.github.io/jump-search-visualisation/)
+11. [What is a jump search](https://www.educative.io/answers/what-is-a-jump-search)
+12. [Interpolation search algorithm](https://www.tutorialspoint.com/data_structures_algorithms/interpolation_search_algorithm.htm)
+13. [Interpolation search with example](https://www.youtube.com/watch?v=iMVKo1vXVsw)
