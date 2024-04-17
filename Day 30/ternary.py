@@ -13,10 +13,11 @@ Steps:
    in the left subarray or mid subarray or right subarray
      key < arr[mid1]
      key > arr[mid2]
-4. If the key is leass than mid1, concentrate the search in the left subarray,
+4. If the key is less than mid1, concentrate the search in the left subarray,
    if it is greater than mid2, concentrate the search in the right subarray
    else, concentrate the search in the mid subarray
-5. Repeat steps 1-3 for whatever subarray that has been chosen until the key is found
+5. Repeat steps 1-3 for whatever subarray where the key could possibly be
+   until the key is found
 6. If the key is not found, return -1
 
 Ternary search can be done iteratively and recursively. Let's see both below
@@ -104,7 +105,7 @@ def ternarySearch_recursive(arr: list, key: int, left: int, right: int) -> int:
     
     
 # test cases
-test_list = [2, 3, 4, 10, 40]
+test_list = []
 for _ in range(10):
     test_list.append(random.randint(0, 100))
 print(f"Original list: {test_list}")
@@ -117,12 +118,12 @@ x = len(test_list)
 
 # iterative search
 result = ternarySearch_iterative(sorted, key, 0, x-1)
-if result == -1:
-    print("Key not found")
+# if result == -1:
+#     print("Key not found")
 print(f"{key} found at index {result} iteratively")
 
 # recursive search
 result = ternarySearch_recursive(sorted, key, 0, x-1)
-if result == -1:
-    print("Key not found")
+# if result == -1:
+#     print("Key not found")
 print(f"{key} found at index {result} recursively")
