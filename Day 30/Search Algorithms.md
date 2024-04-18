@@ -132,6 +132,21 @@ A[n] = value stored at index n in the list
 The time complexity of interpolation search is Ο(log (log n))
 </p>
 
+7. Exponential search
+<p>
+First of all, the algorithm is named <i>exponential</i> because it jumps elements with steps equal to exponenets of 2 (we'll see this in the code implementation), and not because of the time complexity.
+
+On a high level, exponential seacrh involves 2 steps:
+1. Find the range where the element is present
+2. Do a binary search in the found range
+
+Given this, it works on a sorted list by jumping 2^i elements every iteration where i represents the value of loop control variable, and then verifying if the search element is present between last jump and the current jump. 
+
+It is a combination of linear and binary search.
+
+The time complexity for exponential search is O(log n).
+</p>
+
 4. Depth-first search
 <p>
 Used more intricately in data structures like trees and graphs. It explores the depth of a branch before breadth.
@@ -156,3 +171,6 @@ Also used in tree and graph data structures. It explores all the neighboring nod
 11. [What is a jump search](https://www.educative.io/answers/what-is-a-jump-search)
 12. [Interpolation search algorithm](https://www.tutorialspoint.com/data_structures_algorithms/interpolation_search_algorithm.htm)
 13. [Interpolation search with example](https://www.youtube.com/watch?v=iMVKo1vXVsw)
+14. [Exponential search](https://www.geeksforgeeks.org/exponential-search/)
+15. [Exponential search with an example](https://www.youtube.com/watch?v=PaGRX7llaWU)
+16. [Exponential Search Explained](https://www.freecodecamp.org/news/search-algorithms-exponential-search-explained/)
