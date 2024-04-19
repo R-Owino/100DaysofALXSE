@@ -123,10 +123,12 @@ $$mid\, =\, Lo\, +\, \frac{\left ( Hi\, -\, Lo \right )\ast \left ( X\, -\, A\le
 
 where:
 ```math
+
 A = list
 Lo = lowest index of the list
 Hi = highest index of the list
 A[n] = value stored at index n in the list
+
 ```
 
 The time complexity of interpolation search is Ο(log (log n))
@@ -145,6 +147,11 @@ Given this, it works on a sorted list by jumping 2^i elements every iteration wh
 It is a combination of linear and binary search.
 
 The time complexity for exponential search is O(log n).
+</p>
+
+8. Fibonacci search
+<p>
+Works in a sorted array, it is a comparison based technique that uses fibonacci numbers to search for the target. 
 </p>
 
 4. Depth-first search
