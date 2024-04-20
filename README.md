@@ -26,4 +26,5 @@
     <li style="font-size: 20px;"><a href="https://github.com/R-Owino/100DaysofDSA/tree/main/Day%2012-15">Basic Data Structures - Hash Tables</a></li>
     <li style="font-size: 20px;"><a href="https://github.com/R-Owino/100DaysofDSA/tree/main/Day%2016-18">Algorithmic Complexity</a></li>
     <li style="font-size: 20px;"><a href="https://github.com/R-Owino/100DaysofDSA/tree/main/Day%2019">Sorting Algorithms</a></li>
+    <li style="font-size: 20px;"><a href="https://github.com/R-Owino/100DaysofDSA/tree/main/Day%2030">Search Alorithms</li>
 </ol>
