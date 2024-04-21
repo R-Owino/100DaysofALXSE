@@ -151,7 +151,14 @@ The time complexity for exponential search is O(log n).
 
 8. Fibonacci search
 <p>
-Works in a sorted array, it is a comparison based technique that uses fibonacci numbers to search for the target. 
+A comparison-based technique that uses fibonacci numbers to search for the target element. Like binary search, it uses the divide and conquer strategy to look for elements in a sorted array.
+
+A few differences it has with binary search are:
+1. It divides the array into unequal parts.
+2. It uses the + and - signs instead of the / sign to divide the array.
+3. Useful for when the array is big such that it can't fit in the CPU cache or the RAM because it examines relatively closer elements in the subsequent steps.
+
+It has a time complexity of log n, like binary search.
 </p>
 
 4. Depth-first search
@@ -181,3 +188,6 @@ Also used in tree and graph data structures. It explores all the neighboring nod
 14. [Exponential search](https://www.geeksforgeeks.org/exponential-search/)
 15. [Exponential search with an example](https://www.youtube.com/watch?v=PaGRX7llaWU)
 16. [Exponential Search Explained](https://www.freecodecamp.org/news/search-algorithms-exponential-search-explained/)
+17. [Fibonacci search](https://www.geeksforgeeks.org/fibonacci-search/)
+18. [Fibonacci search in data structures](https://www.youtube.com/watch?v=q_AVjuzBxoc)
+19. [Working of fibonacci search](https://www.youtube.com/watch?v=OLMA_MEqgEA)
